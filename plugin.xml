@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="cordova-plugin-zebra-emdk-scanner"
+      version="0.0.1">
+    <name>Zebra EMDK Scanner</name>
+    <description>Zebra EMDK Scanner</description>
+    <license>MIT</license>
+    <keywords>cordova,barcode,qrcode,scanner,laser,zebra,emdk</keywords>
+    <repo>https://github.com/shineum/cordova-plugin-zebra-emdk-scanner.git</repo>
+
+    <js-module src="www/emdkscanner.js" name="ZebraEmdkScanner">
+        <clobbers target="cordova.plugins.zebra.emdkscanner" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ZebraEmdkScanner">
+                <param name="android-package" value="com.shineum.zebra.EmdkScanner" />
+            </feature>
+        </config-file>
+
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="com.symbol.emdk.permission.EMDK" />
+            <queries>
+                <package android:name="com.symbol.emdk.emdkservice" />
+            </queries>
+		</config-file>
+
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<uses-library android:name="com.symbol.emdk" />
+		</config-file>        
+
+        <lib-file src="src/android/emdk-11.0.134.jar"/>
+        <source-file src="src/android/EmdkScanner.java" target-dir="src/com/shineum/zebra" />
+    </platform>
+</plugin>

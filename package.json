@@ -1,0 +1,37 @@
+{
+  "name": "cordova-plugin-zebra-emdk-scanner",
+  "version": "0.0.0",
+  "description": "Laser scanner for Zebra EMDK",
+  "cordova": {
+    "id": "cordova-plugin-zebra-emdk-scanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shineum/cordova-plugin-zebra-emdk-scanner.git"
+  },
+  "keywords": [
+    "cordova",
+    "barcode",
+    "qrcode",
+    "scanner",
+    "laser",
+    "zebra",
+    "emdk",
+    "tc58",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "shineum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shineum/cordova-plugin-zebra-emdk-scanner/issues"
+  },
+  "homepage": "https://github.com/shineum/cordova-plugin-zebra-emdk-scanner#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
