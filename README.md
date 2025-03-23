@@ -64,25 +64,3 @@ cordova.plugins.zebra.emdkscanner.cancel();
 # License
 
 MIT
-
-
-
-
-
-
-
-
-
-
-
-cordova.plugins.xt30scanner.scan(successCallback, errorCallback);
-// then callbacks will be set and scanner will be ready.
-
-var successCallback = function(result, metadata) {
-  // metadata.type
-  console.log(result, metadata);  
-}
-
-var errorCallback = function(error) {
-  console.log(error);
-}

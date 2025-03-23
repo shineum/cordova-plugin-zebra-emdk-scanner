@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-zebra-emdk-scanner",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Laser scanner for Zebra EMDK",
   "cordova": {
     "id": "cordova-plugin-zebra-emdk-scanner",
